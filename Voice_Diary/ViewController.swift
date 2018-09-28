@@ -77,10 +77,10 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CellCollectionViewCell
-        
+
         cell.TitleLabel.text = "드디어 성공했다 개빸개빸"
         cell.Desc.text = "망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 "
         cell.PosterImageView.image = UIImage(named: "testbg")
@@ -93,10 +93,10 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
         cell.layer.shadowOpacity = 1.5
         cell.layer.shadowRadius = 0.0
         cell.layer.masksToBounds = true
-        
+
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "secondVC") as! DetailViewController
 //        controller.imageToImageView = DataLoadedFromFirebase[indexPath.row].Image
@@ -104,7 +104,7 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
         controller.Description = "망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 "
         controller.RefKey = "RefKey?"
         controller.Dateblbl = "2018-09-28"
-        
+
         self.present(controller, animated: false, completion: nil)
     }
     
@@ -134,5 +134,48 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
         }
         
     }
+    
+    //Firebase DB 사용
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return  1
+//    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return DataLoadedFromFirebase.count
+//    }
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CellCollectionViewCell
+//        cell.TitleLabel.text = DataLoadedFromFirebase[indexPath.row].Title
+//        cell.Desc.text = DataLoadedFromFirebase[indexPath.row].Desc
+//
+//        let url = URL(string: DataLoadedFromFirebase[indexPath.row].Image)
+//        cell.PosterImageView.sd_setImage(with: url! as URL)
+//
+//
+//        cell.layer.cornerRadius = 4.5 // optional
+//        // Shadow and Radius
+//        cell.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.20).cgColor
+//        cell.layer.shadowOffset = CGSize(width: 0.0, height: 1.5)
+//        cell.layer.shadowOpacity = 1.5
+//        cell.layer.shadowRadius = 0.0
+//        cell.layer.masksToBounds = true
+//
+//
+//        return cell
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//
+//        let controller = storyboard?.instantiateViewController(withIdentifier: "secondVC") as! DetailViewController
+//        controller.imageToImageView = DataLoadedFromFirebase[indexPath.row].Image
+//        controller.Title = DataLoadedFromFirebase[indexPath.row].Title
+//        controller.Description = DataLoadedFromFirebase[indexPath.row].Desc
+//        controller.RefKey = DataLoadedFromFirebase[indexPath.row].RefKey
+//        controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date
+//        self.present(controller, animated: false, completion: nil)
+//
+//
+//    }
+    
 }
 
