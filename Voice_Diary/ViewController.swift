@@ -7,6 +7,15 @@
 //
 
 import UIKit
+import Firebase
+
+struct LoadFromFirebase {
+    let Image : String
+    let Title : String
+    let Desc : String
+    let Date : String
+    let RefKey : String
+}
 
 class ViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate{
 
@@ -15,13 +24,14 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
     @IBOutlet weak var toAdd: UIImageView!
     @IBOutlet weak var setting: UIImageView!
     
+    var DataLoadedFromFirebase = [LoadFromFirebase]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //이 부분이 빠지면 바인딩이 안되서 데이터가 안나옴
         MyCollectionView.dataSource = self
         MyCollectionView.delegate = self
-        
         
         self.goToFav.addGestureRecognizer(
             UITapGestureRecognizer.init(target: self, action:
@@ -42,6 +52,13 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
             )
         )
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DataLoadedFromFirebase.removeAll()
+        loadData()
+        // Dispose of any resources that can be recreated.
+    }
 
     @objc func DidTapFavor(_ sender: Any) {
         
@@ -58,7 +75,7 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -83,11 +100,39 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "secondVC") as! DetailViewController
 //        controller.imageToImageView = DataLoadedFromFirebase[indexPath.row].Image
-//        controller.Title = DataLoadedFromFirebase[indexPath.row].Title
-//        controller.Description = DataLoadedFromFirebase[indexPath.row].Desc
-//        controller.RefKey = DataLoadedFromFirebase[indexPath.row].RefKey
-//        controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date
+        controller.Title = "드디어 성공했다 개빸개빸"
+        controller.Description = "망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 망할 놈의 Xcode 드디어 성공했네 아오 빸쳐 개빸 더럽게 복잡하네 아놔 진짜 "
+        controller.RefKey = "RefKey?"
+        controller.Dateblbl = "2018-09-28"
+        
+        self.present(controller, animated: false, completion: nil)
     }
-
+    
+    func loadData() {
+        var ref: DatabaseReference!
+        
+        ref = Database.database().reference()
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("Data").child(userID!).child("Data").observe(.childAdded, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let title = value?["Title"] as? String ?? "Unknown"
+            let image = value?["Picture"] as? String ?? "https://firebasestorage.googleapis.com/v0/b/itranslate-156516.appspot.com/o/cathryn-lavery-67852.jpg?alt=media&token=6fdf0447-b990-44c2-99e7-de7daddef0e1"
+            let desc = value?["Desc"] as? String ?? "Error"
+            let Date = value?["Date"] as? String ?? "Error"
+            let RefKey = snapshot.key
+            print("Current Ref Key \(RefKey)")
+            self.DataLoadedFromFirebase.insert(LoadFromFirebase(Image:image ,Title: title , Desc: desc, Date: Date ,RefKey: RefKey) , at: 0)
+            self.MyCollectionView.reloadData()
+            
+            
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+    }
 }
 

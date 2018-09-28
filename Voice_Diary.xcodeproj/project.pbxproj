@@ -12,7 +12,6 @@
 		A6397F68BB36B7707AF38C90 /* Pods_Voice_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB9A53CA2A2048AD381ADD /* Pods_Voice_Diary.framework */; };
 		B727861C2159ABFE00121144 /* AddImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727861A2159ABFE00121144 /* AddImageViewController.swift */; };
 		B727861D2159ABFE00121144 /* AddRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727861B2159ABFE00121144 /* AddRecordTableViewController.swift */; };
-		B7721B10215BB6100045FA51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7721B0F215BB60F0045FA51 /* GoogleService-Info.plist */; };
 		B7721B12215BBAB10045FA51 /* Voice_Diary.xcworkspace in Frameworks */ = {isa = PBXBuildFile; fileRef = B7721B11215BBAB10045FA51 /* Voice_Diary.xcworkspace */; };
 		B7BAC71C2157BEB0005F4B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAC71B2157BEB0005F4B6E /* AppDelegate.swift */; };
 		B7BAC71E2157BEB0005F4B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAC71D2157BEB0005F4B6E /* ViewController.swift */; };
@@ -79,8 +78,12 @@
 		B7BAC8CD21589871005F4B6E /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAC8B021589871005F4B6E /* UnwindSegue.swift */; };
 		B7BAC8CE21589871005F4B6E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAC8B121589871005F4B6E /* LoadingView.swift */; };
 		B7BAC8D021589871005F4B6E /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BAC8B321589871005F4B6E /* AsyncImageView.swift */; };
+		B7EF27D9215E79BB006CDD22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7EF27D8215E79BB006CDD22 /* GoogleService-Info.plist */; };
+		B7EF27DB215E7D28006CDD22 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF27DA215E7D28006CDD22 /* SignUpViewController.swift */; };
+		B7EF27DD215E814B006CDD22 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF27DC215E814B006CDD22 /* CompleteViewController.swift */; };
 		B7F8081A215DCA0F00616E1C /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F80819215DCA0F00616E1C /* CellCollectionViewCell.swift */; };
 		B7F8081C215E234400616E1C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8081B215E234400616E1C /* DetailViewController.swift */; };
+		B7F8081F215E674F00616E1C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8081E215E674F00616E1C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +111,6 @@
 		B5EA1D92DBB36DDF54F9B240 /* Pods-Voice_DiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voice_DiaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voice_DiaryUITests/Pods-Voice_DiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B727861A2159ABFE00121144 /* AddImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageViewController.swift; sourceTree = "<group>"; };
 		B727861B2159ABFE00121144 /* AddRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordTableViewController.swift; sourceTree = "<group>"; };
-		B7721B0F215BB60F0045FA51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7721B11215BBAB10045FA51 /* Voice_Diary.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Voice_Diary.xcworkspace; sourceTree = "<group>"; };
 		B7BAC7182157BEB0005F4B6E /* Voice_Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voice_Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BAC71B2157BEB0005F4B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -212,8 +214,12 @@
 		B7BAC8B021589871005F4B6E /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		B7BAC8B121589871005F4B6E /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		B7BAC8B321589871005F4B6E /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		B7EF27D8215E79BB006CDD22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7EF27DA215E7D28006CDD22 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B7EF27DC215E814B006CDD22 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		B7F80819215DCA0F00616E1C /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7F8081B215E234400616E1C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B7F8081E215E674F00616E1C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC0A70716CA0BEB4C3A7E3B2 /* Pods-Voice_DiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voice_DiaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voice_DiaryTests/Pods-Voice_DiaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		CEAB9A53CA2A2048AD381ADD /* Pods_Voice_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voice_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5577C264312C83BAEEB8C61 /* Pods_Voice_DiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voice_DiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -313,6 +319,7 @@
 		B7BAC71A2157BEB0005F4B6E /* Voice_Diary */ = {
 			isa = PBXGroup;
 			children = (
+				B7F8081D215E670D00616E1C /* Authentication View Controllers */,
 				B7F80818215DC99B00616E1C /* CollectionView */,
 				B72786192159ABFE00121144 /* Add new record */,
 				B7BAC89521589871005F4B6E /* Spring */,
@@ -321,7 +328,7 @@
 				B7BAC71F2157BEB0005F4B6E /* Main.storyboard */,
 				B7BAC7222157BEB1005F4B6E /* Assets.xcassets */,
 				B7BAC7242157BEB1005F4B6E /* LaunchScreen.storyboard */,
-				B7721B0F215BB60F0045FA51 /* GoogleService-Info.plist */,
+				B7EF27D8215E79BB006CDD22 /* GoogleService-Info.plist */,
 				B7BAC7272157BEB1005F4B6E /* Info.plist */,
 			);
 			path = Voice_Diary;
@@ -471,6 +478,16 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		B7F8081D215E670D00616E1C /* Authentication View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8081E215E674F00616E1C /* LoginViewController.swift */,
+				B7EF27DA215E7D28006CDD22 /* SignUpViewController.swift */,
+				B7EF27DC215E814B006CDD22 /* CompleteViewController.swift */,
+			);
+			path = "Authentication View Controllers";
+			sourceTree = "<group>";
+		};
 		D94DC2A078A4EC91F7C0AB3F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,7 +611,7 @@
 			files = (
 				B7BAC7262157BEB1005F4B6E /* LaunchScreen.storyboard in Resources */,
 				B7BAC8C821589871005F4B6E /* LoadingView.xib in Resources */,
-				B7721B10215BB6100045FA51 /* GoogleService-Info.plist in Resources */,
+				B7EF27D9215E79BB006CDD22 /* GoogleService-Info.plist in Resources */,
 				B7BAC7232157BEB1005F4B6E /* Assets.xcassets in Resources */,
 				B7BAC7212157BEB0005F4B6E /* Main.storyboard in Resources */,
 			);
@@ -741,13 +758,16 @@
 				B7BAC8B521589871005F4B6E /* KeyboardLayoutConstraint.swift in Sources */,
 				B7BAC8CC21589871005F4B6E /* SpringAnimation.swift in Sources */,
 				B7BAC8BA21589871005F4B6E /* SpringImageView.swift in Sources */,
+				B7EF27DD215E814B006CDD22 /* CompleteViewController.swift in Sources */,
 				B7BAC8C621589871005F4B6E /* DesignableTabBarController.swift in Sources */,
 				B7BAC8B721589871005F4B6E /* TransitionZoom.swift in Sources */,
 				B7BAC8C421589871005F4B6E /* SpringTextField.swift in Sources */,
 				B7BAC8CB21589871005F4B6E /* AutoTextView.swift in Sources */,
 				B7BAC8B421589871005F4B6E /* DesignableImageView.swift in Sources */,
 				B7BAC8C021589871005F4B6E /* SpringTextView.swift in Sources */,
+				B7EF27DB215E7D28006CDD22 /* SignUpViewController.swift in Sources */,
 				B7BAC71C2157BEB0005F4B6E /* AppDelegate.swift in Sources */,
+				B7F8081F215E674F00616E1C /* LoginViewController.swift in Sources */,
 				B7BAC8BE21589871005F4B6E /* DesignableTextField.swift in Sources */,
 				B7F8081A215DCA0F00616E1C /* CellCollectionViewCell.swift in Sources */,
 				B7BAC8C321589871005F4B6E /* DesignableButton.swift in Sources */,
