@@ -123,7 +123,7 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
             let desc = value?["Desc"] as? String ?? "Error"
             let Date = value?["Date"] as? String ?? "Error"
             let RefKey = snapshot.key
-            print("Current Ref Key \(RefKey)")
+            //print("Current Ref Key \(RefKey)")
             self.DataLoadedFromFirebase.insert(LoadFromFirebase(Image:image ,Title: title , Desc: desc, Date: Date ,RefKey: RefKey) , at: 0)
             self.MyCollectionView.reloadData()
             

@@ -1,0 +1,6 @@
+framework module Pods_Voice_DiaryUITests {
+  umbrella header "Pods-Voice_DiaryUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
