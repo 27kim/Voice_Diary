@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SDWebImage
 
+
 struct LoadFromFirebase {
     let Image : String
     let Title : String
@@ -18,7 +19,7 @@ struct LoadFromFirebase {
     let RefKey : String
 }
 
-class ViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate{
+class ViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
 
     @IBOutlet weak var MyCollectionView: UICollectionView!
     @IBOutlet weak var goToFav: UIImageView!

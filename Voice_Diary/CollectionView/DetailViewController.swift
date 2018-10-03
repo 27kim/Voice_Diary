@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 struct AppUtility {
     
@@ -59,7 +59,7 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         self.DiaryLabel.text = Title
         self.DiaryTextView.text = Description
         let url = URL(string: imageToImageView)
-//        self.DiaryImageView.sd_setImage(with: url! as URL)
+        self.DiaryImageView.sd_setImage(with: url! as URL)
          //self.DiaryImageView = UIImage(named: imageToImageView)
         self.DateLabel.text = Dateblbl
         
@@ -71,12 +71,7 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
             )
         )
         
-        
         self.closeImageView.isUserInteractionEnabled = true
-        
-        
-        ////
-        
         
         self.FavoriteImageView.addGestureRecognizer(
             UITapGestureRecognizer.init(target: self, action:
@@ -84,14 +79,12 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
             )
         )
         
-        
         self.DeleteImageView.addGestureRecognizer(
             UITapGestureRecognizer.init(target: self, action:
                 #selector(DidTapDelete(_:))
             )
         )
         self.DeleteImageView.isUserInteractionEnabled = true
-        
         
         self.ShareImageView.addGestureRecognizer(
             UITapGestureRecognizer.init(target: self, action:
@@ -107,16 +100,10 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
     }
     
     @objc func DidTapFavor(_ sender: Any) {
-        
         self.performSegue(withIdentifier: "toFav", sender: self)
-        
-        
     }
     @objc func DidTapSetting(_ sender: Any) {
-        
         self.performSegue(withIdentifier: "toSetting", sender: self)
-        
-        
     }
     @objc func DidTapAdd(_ sender: Any) {
         
@@ -128,7 +115,7 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         
     }
     @objc func DidTapFavorite(_ sender: Any) {
-//
+
 //        if favoriteImageView.image == #imageLiteral(resourceName: "HeartTapped") {
 //            var ref: DatabaseReference!
 //            ref = Database.database().reference()
@@ -153,56 +140,46 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         
     }
     @objc func DidTapDelete(_ sender: Any) {
-//
-//        let alert = UIAlertController(title: "Are you sure?", message: "this action cannot be undone, means there's no going back!", preferredStyle: .actionSheet)
-//        alert.addAction(UIAlertAction(title: "Delete", style: .destructive) { action in
-//            var ref: DatabaseReference!
-//
-//            ref = Database.database().reference()
-//
-//            let userID = Auth.auth().currentUser?.uid
-//
-//            ref.child("Data").child(userID!).child("Data").child(self.RefKey).removeValue()
-//            self.dismiss(animated: true, completion: {
-//                self.view1.animation = "zoomOut"
-//                self.view1.duration = 2
-//                self.view1.animate()
-//            })
-//
-//
-//
-//        })
-//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { action in
-//            // perhaps use action.title here
-//            alert.dismiss(animated: true, completion: nil)
-//
-//        })
-//
-//        self.present(alert, animated: true, completion: nil)
-//
-        
+
+        let alert = UIAlertController(title: "Are you sure?", message: "this action cannot be undone, means there's no going back!", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive) { action in
+            var ref: DatabaseReference!
+
+            ref = Database.database().reference()
+
+            let userID = Auth.auth().currentUser?.uid
+
+            ref.child("Data").child(userID!).child("Data").child(self.RefKey).removeValue()
+            self.dismiss(animated: true, completion: {
+                self.view1.animation = "zoomOut"
+                self.view1.duration = 2
+                self.view1.animate()
+            })
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { action in
+            // perhaps use action.title here
+            alert.dismiss(animated: true, completion: nil)
+
+        })
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc func DidTapShare(_ sender: Any) {
         
-//
-//
-//        // text to share
-//        let text = Title
-//        let desc = Description
-//
-//        // set up activity view controller
-//        let textToShare = [ text,desc ]
-//        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
-//        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
-//
-//        // exclude some activity types from the list (optional)
-//        activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook,UIActivityType.mail,UIActivityType.message,UIActivityType.postToTwitter ]
-//
-//        // present the view controller
-//        self.present(activityViewController, animated: true, completion: nil)
-//
-//
+        // text to share
+        let text = Title
+        let desc = Description
+
+        // set up activity view controller
+        let textToShare = [ text,desc ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+
+        // exclude some activity types from the list (optional)
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook,UIActivity.ActivityType.mail,UIActivity.ActivityType.message,UIActivity.ActivityType.postToTwitter ]
+
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
         
     }
 }
