@@ -10,6 +10,7 @@
 		3998D8049495A47A874C143B /* Pods_Voice_DiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5577C264312C83BAEEB8C61 /* Pods_Voice_DiaryUITests.framework */; };
 		5A76A3B54087BFD2CEC3240F /* Pods_Voice_DiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BA4DB73E8EDF71159631BE /* Pods_Voice_DiaryTests.framework */; };
 		A6397F68BB36B7707AF38C90 /* Pods_Voice_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB9A53CA2A2048AD381ADD /* Pods_Voice_Diary.framework */; };
+		B70F6AED216BF6C000ABA201 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F6AEC216BF6C000ABA201 /* WeatherModel.swift */; };
 		B727861C2159ABFE00121144 /* AddImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727861A2159ABFE00121144 /* AddImageViewController.swift */; };
 		B727861D2159ABFE00121144 /* AddRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B727861B2159ABFE00121144 /* AddRecordTableViewController.swift */; };
 		B7721B12215BBAB10045FA51 /* Voice_Diary.xcworkspace in Frameworks */ = {isa = PBXBuildFile; fileRef = B7721B11215BBAB10045FA51 /* Voice_Diary.xcworkspace */; };
@@ -109,6 +110,7 @@
 		96668660E2325AD10BE547EE /* Pods-Voice_DiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voice_DiaryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voice_DiaryUITests/Pods-Voice_DiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8F83B09DCD96B54C07CBC22 /* Pods-Voice_DiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voice_DiaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voice_DiaryTests/Pods-Voice_DiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5EA1D92DBB36DDF54F9B240 /* Pods-Voice_DiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voice_DiaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voice_DiaryUITests/Pods-Voice_DiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B70F6AEC216BF6C000ABA201 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		B727861A2159ABFE00121144 /* AddImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageViewController.swift; sourceTree = "<group>"; };
 		B727861B2159ABFE00121144 /* AddRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordTableViewController.swift; sourceTree = "<group>"; };
 		B7721B11215BBAB10045FA51 /* Voice_Diary.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Voice_Diary.xcworkspace; sourceTree = "<group>"; };
@@ -285,9 +287,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B70F6AEB216BF6AA00ABA201 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B70F6AEC216BF6C000ABA201 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B72786192159ABFE00121144 /* Add new record */ = {
 			isa = PBXGroup;
 			children = (
+				B70F6AEB216BF6AA00ABA201 /* Model */,
 				B727861A2159ABFE00121144 /* AddImageViewController.swift */,
 				B727861B2159ABFE00121144 /* AddRecordTableViewController.swift */,
 			);
@@ -687,10 +698,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Voice_Diary/Pods-Voice_Diary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -698,10 +711,12 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -743,6 +758,7 @@
 				B7BAC8CD21589871005F4B6E /* UnwindSegue.swift in Sources */,
 				B7BAC8C921589871005F4B6E /* SpringLabel.swift in Sources */,
 				B7BAC8C721589871005F4B6E /* AsyncButton.swift in Sources */,
+				B70F6AED216BF6C000ABA201 /* WeatherModel.swift in Sources */,
 				B7BAC8BF21589871005F4B6E /* SpringButton.swift in Sources */,
 				B7BAC8C121589871005F4B6E /* Misc.swift in Sources */,
 				B7BAC8CE21589871005F4B6E /* LoadingView.swift in Sources */,

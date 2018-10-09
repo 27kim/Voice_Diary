@@ -11,6 +11,8 @@ import UIKit
 //import FirebaseAuth
 import Firebase
 import Speech
+import Alamofire
+import SwiftyJSON
 
 class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UITextFieldDelegate,SFSpeechRecognizerDelegate {
 
@@ -24,6 +26,7 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
     @IBOutlet var DescTextView: UITextView!
     @IBOutlet var TitleTextField: UITextField!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var weatherTextField: UITextField!
     
     @IBAction func STT(_ sender: Any) {
         if audioEngine.isRunning { // 현재 음성인식이 수행중이라면
@@ -128,11 +131,91 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
 
     }
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //STT
         speechRecognizer?.delegate = self
+        
+        let date = Date() // --- 1
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyyMMdd" // --- 2
+        let stringDate = dateFormatter.string(from: date) // --- 3
+        var intdate = Int(stringDate)
+        
+        //http://newsky2.kma.go.kr/service/SecndSrtpdFrcstInfoService2/ForecastSpaceData?serviceKey=YH1dOA3pzcvTd49kZWzlwaQNkwsUMEccHdQS3Pbcwfs3vy9MsMwQy%2FOYEUuMhlDLl68GfERnemKNK%2BNu87WNsg%3D%3D&base_date=20180913&base_time=0200&nx=60&ny=127&numOfRows=100&_type=json
+        var url = "http://newsky2.kma.go.kr/service/SecndSrtpdFrcstInfoService2/ForecastSpaceData"
+        var params = ["serviceKey":"YH1dOA3pzcvTd49kZWzlwaQNkwsUMEccHdQS3Pbcwfs3vy9MsMwQy/OYEUuMhlDLl68GfERnemKNK+Nu87WNsg==",
+                                  //YH1dOA3pzcvTd49kZWzlwaQNkwsUMEccHdQS3Pbcwfs3vy9MsMwQy%252FOYEUuMhlDLl68GfERnemKNK%252BNu87WNsg%253D%253D
+            //YH1dOA3pzcvTd49kZWzlwaQNkwsUMEccHdQS3Pbcwfs3vy9MsMwQy%252FOYEUuMhlDLl68GfERnemKNK%252BNu87WNsg%253D%253D
+                      "base_date":stringDate,
+                      "base_time":"0200",
+                      "nx":"60",
+                      "ny":"127",
+                      "numOfRows":"100",
+                      "_type":"json"]
+        
+        var min : Int = 0
+        var max : Int = 0
+        var textResult = ""
+        
+        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.queryString, headers: nil).responseJSON { (response) in
+            switch response.result{
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                var data0 = json["response"]
+                var data1 = data0["body"]
+                var data2 = data1["items"]
+                var data3 = data2["item"]
+                data3.array?.forEach({ (weatherData) in
+                    let data = weatherData
+
+                    var date : String = data["fcstDate"].stringValue
+                    if(data["category"] == "TMN" && date == stringDate){
+                        min = data["fcstValue"].intValue
+                        print("min \(min)")
+                        
+                    
+                    }
+                    
+                    if(data["category"] == "TMX"){
+                        max = data["fcstValue"].intValue
+                        
+                        print("max \(max)")
+                        
+                    }
+                    
+                    if(data["category"] == "SKY" && date == stringDate && data["fcstTime"] == "0900"){
+                        var sky = data["fcstValue"].intValue
+                        textResult = ""
+                        switch(sky){
+                        case 0..<3 :
+                            textResult = "☀️"
+                        case 3..<6 :
+                            textResult = "🌤"
+                            case 6..<8 :
+                            textResult = "⛅️"
+                            case 8..<10 :
+                            textResult = "🌥"
+                        default : textResult = "☀️"
+                        }
+                        
+                        
+                        print("하늘 \(textResult)")
+                        
+                    }
+                    
+                    })
+                self.weatherTextField.text?.append("\(stringDate),  ")
+                self.weatherTextField.text?.append("기온 \(min) / ")
+                self.weatherTextField.text?.append("\(max) ")
+                self.weatherTextField.text?.append(textResult)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        
         
         
     }
