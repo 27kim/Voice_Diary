@@ -204,7 +204,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-dB-e1Z">
-                                                    <rect key="frame" x="0.0" y="-1" width="375" height="24"/>
+                                                    <rect key="frame" x="0.0" y="1" width="375" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
@@ -488,7 +488,7 @@ That night at 11o’clock mum woke me up as we were going to the Eiffel Tower!!!
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday, October 8, 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-v1-msf">
-                                                <rect key="frame" x="81" y="211" width="183" height="24"/>
+                                                <rect key="frame" x="50" y="211" width="245" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="mXJ-GI-Lr9"/>
                                                 </constraints>
@@ -528,7 +528,7 @@ That night at 11o’clock mum woke me up as we were going to the Eiffel Tower!!!
                                             <constraint firstItem="lKW-pR-qde" firstAttribute="top" secondItem="E3k-qj-9X6" secondAttribute="top" id="KHN-qA-ry0"/>
                                             <constraint firstItem="Qia-MV-NaE" firstAttribute="bottom" secondItem="E3k-qj-9X6" secondAttribute="bottomMargin" id="Kqv-L4-b5M"/>
                                             <constraint firstItem="U7m-Gh-3F2" firstAttribute="top" secondItem="Ee1-a3-pO0" secondAttribute="top" id="Q0h-Qw-dxA"/>
-                                            <constraint firstItem="cIU-v1-msf" firstAttribute="leading" secondItem="E3k-qj-9X6" secondAttribute="leading" constant="81" id="Wzn-nD-rPx"/>
+                                            <constraint firstItem="cIU-v1-msf" firstAttribute="leading" secondItem="E3k-qj-9X6" secondAttribute="leading" constant="50" id="Wzn-nD-rPx"/>
                                             <constraint firstAttribute="height" constant="272" id="chd-2f-9ZB"/>
                                             <constraint firstAttribute="trailing" secondItem="Jxa-Vz-Zr7" secondAttribute="trailing" id="dNZ-kr-hrA"/>
                                             <constraint firstItem="Qia-MV-NaE" firstAttribute="top" secondItem="U7m-Gh-3F2" secondAttribute="top" id="f6J-s6-DPn"/>

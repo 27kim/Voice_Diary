@@ -369,11 +369,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "560740994.575264"
+            timestampString = "560869982.4366421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
             <Locations>
@@ -417,11 +417,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "560740994.575321"
+            timestampString = "560869982.436705"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -433,27 +433,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "560740994.575364"
+            timestampString = "560869982.4367501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "GoButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "560740994.575406"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -465,7 +449,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.575449"
+            timestampString = "560869982.436794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -481,7 +465,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.5758851"
+            timestampString = "560869982.436866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -497,7 +481,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.576187"
+            timestampString = "560869982.436924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
@@ -545,7 +529,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.576486"
+            timestampString = "560869982.43699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "165"
@@ -561,7 +545,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.5767699"
+            timestampString = "560869982.4370461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "182"
@@ -577,7 +561,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.5770431"
+            timestampString = "560869982.437098"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "174"
@@ -593,7 +577,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.577287"
+            timestampString = "560869982.437143"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
@@ -609,7 +593,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.577599"
+            timestampString = "560869982.437191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
@@ -625,12 +609,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "560740994.577949"
+            timestampString = "560869982.437238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
             endingLineNumber = "175"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
+            timestampString = "560869982.4372801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "GoButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
+            timestampString = "560869982.43732"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "SaveToFirebase(downloadURL:Title:Desc:Weather:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

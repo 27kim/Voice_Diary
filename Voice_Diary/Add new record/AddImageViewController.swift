@@ -15,6 +15,7 @@ class AddImageViewController: UIViewController, UIImagePickerControllerDelegate,
     var PTitle = ""
     var PDesc = ""
     var PDL = ""
+    var PWeather = ""
     let imagePicker = UIImagePickerController()
     
     @IBOutlet var PostImage: DesignableImageView!
@@ -200,13 +201,12 @@ class AddImageViewController: UIViewController, UIImagePickerControllerDelegate,
         } else {
             
         }
-        self.SaveToFirebase(downloadURL: PDL, Title: self.PTitle, Desc: self.PDesc)
+        self.SaveToFirebase(downloadURL: PDL, Title: self.PTitle, Desc: self.PDesc, Weather: self.PWeather)
         self.navigationController?.popToRootViewController(animated: true)
         
         
     }
-    
-    func SaveToFirebase(downloadURL: String,Title:String,Desc:String) {
+    func SaveToFirebase(downloadURL: String,Title:String,Desc:String, Weather : String) {
         let date = NSDate()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat  = "EEEE, MMMM dd, yyyy, h:mm:ss"//"EE" to get short style
@@ -219,10 +219,31 @@ class AddImageViewController: UIViewController, UIImagePickerControllerDelegate,
             "Desc":Desc,
             "Picture": downloadURL,
             "Date": dayInWeek,
+            "Weather": Weather,
             "isFav":"false",
             ]
         ref.child("Data").child(user!.uid).child("Data").childByAutoId().setValue(post)
         
         
     }
+    
+//    func SaveToFirebase(downloadURL: String,Title:String,Desc:String) {
+//        let date = NSDate()
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat  = "EEEE, MMMM dd, yyyy, h:mm:ss"//"EE" to get short style
+//        let dayInWeek = dateFormatter.string(from: date as Date)//"Sunday"
+//        var ref: DatabaseReference!
+//        let user = Auth.auth().currentUser
+//        ref = Database.database().reference()
+//        let post:[String : Any] = [
+//            "Title":Title,
+//            "Desc":Desc,
+//            "Picture": downloadURL,
+//            "Date": dayInWeek,
+//            "isFav":"false",
+//            ]
+//        ref.child("Data").child(user!.uid).child("Data").childByAutoId().setValue(post)
+//
+//
+//    }
 }

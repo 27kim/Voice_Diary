@@ -235,6 +235,7 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
         let objSecond = storyboard.instantiateViewController(withIdentifier: "vc2") as! AddImageViewController
         objSecond.PTitle = TitleTextField.text!
         objSecond.PDesc = DescTextView.text
+        objSecond.PWeather = weatherTextField.text!
         self.navigationController?.pushViewController(objSecond, animated: true)
         
         

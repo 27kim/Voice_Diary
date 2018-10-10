@@ -16,6 +16,7 @@ struct LoadFromFirebase {
     let Title : String
     let Desc : String
     let Date : String
+    let Weather : String
     let RefKey : String
 }
 
@@ -123,14 +124,11 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
             let image = value?["Picture"] as? String ?? "https://firebasestorage.googleapis.com/v0/b/itranslate-156516.appspot.com/o/cathryn-lavery-67852.jpg?alt=media&token=6fdf0447-b990-44c2-99e7-de7daddef0e1"
             let desc = value?["Desc"] as? String ?? "Error"
             let Date = value?["Date"] as? String ?? "Error"
+            let Weather = value?["Weather"] as? String ?? "🌈"
             let RefKey = snapshot.key
             //print("Current Ref Key \(RefKey)")
-            self.DataLoadedFromFirebase.insert(LoadFromFirebase(Image:image ,Title: title , Desc: desc, Date: Date ,RefKey: RefKey) , at: 0)
+            self.DataLoadedFromFirebase.insert(LoadFromFirebase(Image:image ,Title: title , Desc: desc, Date: Date, Weather : Weather ,RefKey: RefKey) , at: 0)
             self.MyCollectionView.reloadData()
-            
-            
-            
-            // ...
         }) { (error) in
             print(error.localizedDescription)
         }
@@ -173,7 +171,14 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
         controller.Title = DataLoadedFromFirebase[indexPath.row].Title
         controller.Description = DataLoadedFromFirebase[indexPath.row].Desc
         controller.RefKey = DataLoadedFromFirebase[indexPath.row].RefKey
-        controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date
+
+        if(DataLoadedFromFirebase[indexPath.row].Weather.length > 2){
+            let index = DataLoadedFromFirebase[indexPath.row].Weather.index(DataLoadedFromFirebase[indexPath.row].Weather.startIndex, offsetBy : 9)
+            controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date + DataLoadedFromFirebase[indexPath.row].Weather[index...]
+        }else{
+            controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date + DataLoadedFromFirebase[indexPath.row].Weather
+        }
+        
         self.present(controller, animated: false, completion: nil)
 
 
