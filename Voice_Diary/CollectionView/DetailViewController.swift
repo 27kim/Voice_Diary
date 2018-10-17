@@ -106,13 +106,9 @@ class DetailViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         self.performSegue(withIdentifier: "toSetting", sender: self)
     }
     @objc func DidTapAdd(_ sender: Any) {
-        
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let objSecond = storyboard.instantiateViewController(withIdentifier: "toAdd") as! AddRecordTableViewController
         self.navigationController?.pushViewController(objSecond, animated: true)
-        
-        
     }
     @objc func DidTapFavorite(_ sender: Any) {
 

@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import SDWebImage
-
+import CoreLocation
 
 struct LoadFromFirebase {
     let Image : String
@@ -55,6 +55,7 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
             )
         )
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

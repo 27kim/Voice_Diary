@@ -37,7 +37,7 @@
                                                 <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNu-Nq-hzd">
                                                     <rect key="frame" x="0.0" y="0.0" width="175" height="218"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testbg" translatesAutoresizingMaskIntoConstraints="NO" id="fkL-MZ-Ewy" customClass="DesignableImageView" customModule="Voice_Diary" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testbg" translatesAutoresizingMaskIntoConstraints="NO" id="fkL-MZ-Ewy" customClass="DesignableImageView" customModule="Voice_Diary" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="175" height="120"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -487,7 +487,7 @@ That night at 11o’clock mum woke me up as we were going to the Eiffel Tower!!!
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday, October 8, 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-v1-msf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday, October 8, 2017" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-v1-msf">
                                                 <rect key="frame" x="50" y="211" width="245" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="mXJ-GI-Lr9"/>
