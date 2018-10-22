@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
-            timestampString = "559844446.174293"
+            timestampString = "561901659.540651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "LoginViewController"
             landmarkType = "3">
             <Locations>
@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
-            timestampString = "559844446.174371"
+            timestampString = "561901659.54074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "LoginViewController"
             landmarkType = "3">
             <Locations>
@@ -195,181 +195,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
-            timestampString = "559844446.1744159"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "LoginViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.LoginViewController.signUp.getter : weak Swift.Optional&lt;Voice_Diary.SpringImageView&gt;"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839380.060482"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.LoginViewController.signUp.setter : weak Swift.Optional&lt;Voice_Diary.SpringImageView&gt;"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839380.061895"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "106">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.LoginViewController.init(style: __C.UITableViewStyle) -&gt; Voice_Diary.LoginViewController"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839380.063399"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "262">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Voice_Diary.LoginViewController"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839380.0648561"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "282">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Voice_Diary.LoginViewController&gt;"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839380.066368"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "241">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
-            timestampString = "559844446.174454"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "signInAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
-            timestampString = "559844446.174491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "signInAction(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.LoginViewController.signInAction(Any) -&gt; ()"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839820.8511651"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "37">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Voice_Diary.LoginViewController.signInAction(Any) -&gt; ()"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Authentication%20View%20Controllers/LoginViewController.swift"
-                  timestampString = "559839820.853125"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Authentication View Controllers/SignUpViewController.swift"
-            timestampString = "559844446.174529"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "signUp(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "561474801.440395"
+            timestampString = "561867125.291667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
@@ -417,7 +244,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "561474801.440456"
+            timestampString = "561867125.291711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
@@ -433,7 +260,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "561474801.440498"
+            timestampString = "561867125.29175"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -449,7 +276,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.190226"
+            timestampString = "561901659.540852"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -465,61 +292,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.19039"
+            timestampString = "561901659.540898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "startRecording()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.190472"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "startRecording()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Voice_Diary.AddRecordTableViewController.startRecording() -&gt; ()"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Add%20new%20record/AddRecordTableViewController.swift"
-                  timestampString = "560263810.192512"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "1332">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Voice_Diary.AddRecordTableViewController.startRecording() -&gt; ()"
-                  moduleName = "Voice_Diary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Add%20new%20record/AddRecordTableViewController.swift"
-                  timestampString = "560263810.194068"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "61">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -529,7 +308,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "561474801.441323"
+            timestampString = "561867125.2923681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "199"
@@ -545,7 +324,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddImageViewController.swift"
-            timestampString = "561474801.441359"
+            timestampString = "561867125.292402"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "216"
@@ -561,11 +340,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.190573"
+            timestampString = "561901659.540959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "updateWeatherInfo(lat:lng:nx:ny:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -576,13 +355,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.190645"
+            filePath = "Voice_Diary/ViewController.swift"
+            timestampString = "561901659.541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
-            landmarkName = "getCurrentLocation()"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -592,13 +371,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.1907099"
+            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
+            timestampString = "561901659.541046"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "getCurrentLocation()"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "signInAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -608,44 +387,76 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.190749"
+            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
+            timestampString = "561901659.541099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "getCurrentLocation()"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
+            timestampString = "561901659.541149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/ViewController.swift"
+            timestampString = "561901659.541203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CLPlacemark&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Voice_Diary.AddRecordTableViewController.getCurrentLocation() -&gt; ()"
+                  symbolName = "Voice_Diary.ViewController.loadData() -&gt; ()"
                   moduleName = "Voice_Diary"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Add%20new%20record/AddRecordTableViewController.swift"
-                  timestampString = "561475567.270084"
+                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/ViewController.swift"
+                  timestampString = "561864293.299368"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "157"
-                  endingLineNumber = "157"
-                  offsetFromSymbolStart = "57">
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "403">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CLPlacemark&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Voice_Diary.AddRecordTableViewController.getCurrentLocation() -&gt; ()"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in Voice_Diary.ViewController.loadData() -&gt; ()"
                   moduleName = "Voice_Diary"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/Add%20new%20record/AddRecordTableViewController.swift"
-                  timestampString = "561475567.2716579"
+                  urlString = "file:///Users/27k/XcodeProjects/Voice_Diary/Voice_Diary/ViewController.swift"
+                  timestampString = "561864293.303459"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "157"
-                  endingLineNumber = "157"
-                  offsetFromSymbolStart = "143">
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "67">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -656,12 +467,140 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
-            timestampString = "561476106.190783"
+            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
+            timestampString = "561901659.541247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "signInAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/AppDelegate.swift"
+            timestampString = "561901659.541299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/ViewController.swift"
+            timestampString = "561901659.541342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/AppDelegate.swift"
+            timestampString = "561901659.5413769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Authentication View Controllers/SignUpViewController.swift"
+            timestampString = "561901659.541419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Authentication View Controllers/LoginViewController.swift"
+            timestampString = "561901659.541456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/AppDelegate.swift"
+            timestampString = "561901659.541495"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "sign(_:didSignInFor:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
+            timestampString = "561901659.541528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "getCurrentLocation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voice_Diary/Add new record/AddRecordTableViewController.swift"
+            timestampString = "561901659.541561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "getCurrentLocation()"
             landmarkType = "7">
          </BreakpointContent>

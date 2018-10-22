@@ -58,8 +58,26 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
         super.viewDidLoad()
         //STT
         speechRecognizer?.delegate = self
-        //현재 위치 좌표 가져오기
-        getCurrentLocation()
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization() //권한 요청
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if (status == CLAuthorizationStatus.denied) {
+            // The user denied authorization
+             locationManager.requestWhenInUseAuthorization() //권한 요청
+        } else if (status == CLAuthorizationStatus.authorizedAlways) {
+            // The user accepted authorization
+            //현재 위치 좌표 가져오기
+            getCurrentLocation()
+        }else if (status == CLAuthorizationStatus.authorizedWhenInUse) {
+            getCurrentLocation()
+        }
     }
     
     func startRecording() {
@@ -142,10 +160,7 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
     }
     
     func getCurrentLocation(){
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization() //권한 요청
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+
         locationManager.startUpdatingLocation()
         
         let coor = locationManager.location?.coordinate
@@ -166,13 +181,15 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
                 {
                     print("getLocation() :  \(name)")
                     self.weatherTextField.text?.append(" - \(name) ")
+                    self.updateWeatherInfo(lat : gridData.lat, lng : gridData.lng, nx : String(gridData.x), ny : String(gridData.y))
+                    //전달 받은 데이터로 날씨 정보 업데이트 함
+                  
                     }
                     
                 } })
         //주소 가지고 오는 부분이 날씨보다 느려서 delay 추가
         sleep(1)
-        //전달 받은 데이터로 날씨 정보 업데이트 함
-        updateWeatherInfo(lat : gridData.lat, lng : gridData.lng, nx : String(gridData.x), ny : String(gridData.y))
+        
     }
     
     func updateWeatherInfo(lat: Double, lng : Double, nx: String, ny : String){

@@ -15,9 +15,11 @@ class SignUpViewController: UITableViewController {
     @IBOutlet weak var userPassword: DesignableTextField!
     
     @IBAction func signUp(_ sender: Any) {
-        Auth.auth().createUser(withEmail: userEmail.text!, password: userPassword.text!) { (user, error) in
-            // [START_EXCLUDE]
+        Auth.auth().createUser(withEmail: userEmail.text!, password: userPassword.text!) { (authResult, error) in
             
+            //        Auth.auth().createUser(withEmail: userEmail.text!, password: userPassword.text!) { (user, error) in
+            //            // [START_EXCLUDE]
+            //
             if let error = error {
                 
                 if let errCode = AuthErrorCode(rawValue: error._code) {
@@ -62,8 +64,11 @@ class SignUpViewController: UITableViewController {
                 }
                 return
             }
+            
+            
+            guard let user = authResult?.user else { return }
             let userDef = UserDefaults.standard
-            userDef.set(user?.user.email, forKey: "email")
+            userDef.set(authResult?.user.email, forKey: "email")
             userDef.set(self.userPassword.text, forKey: "password")
             var tureFalse = Bool()
             tureFalse = true
@@ -80,8 +85,8 @@ class SignUpViewController: UITableViewController {
             let dayInWeek = dateFormatter.string(from: date as Date) //"Sunday"
             
             let post:[String : Any] = [
-                "Title":"Welcome to Perdia",
-                "Desc":"Big step... Also make sure to add your first diary by tapping the plus button on the bottom of your screen",
+                "Title":"Hi, there!",
+                "Desc":"Add first diary by tapping the plus button on the bottom of your screen",
                 "Picture":"https://firebasestorage.googleapis.com/v0/b/itranslate-156516.appspot.com/o/cathryn-lavery-67852.jpg?alt=media&token=6fdf0447-b990-44c2-99e7-de7daddef0e1",
                 "Date": dayInWeek,
                 "isFav":"true",
@@ -90,14 +95,16 @@ class SignUpViewController: UITableViewController {
                 ]
             
             
-            ref.child("Data").child(user!.user.uid).setValue(["Username": self.userName.text])
-            ref.child("Data").child(user!.user.uid).child("Data").childByAutoId().setValue(post)
+            ref.child("Data").child(authResult!.user.uid).setValue(["Username": self.userName.text])
+            ref.child("Data").child(authResult!.user.uid).child("Data").childByAutoId().setValue(post)
             
             
             
             // [END_EXCLUDE]
+            //        }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

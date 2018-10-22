@@ -7,35 +7,63 @@
 //
 
 import Firebase
+import GoogleSignIn
 import UIKit
 
-class LoginViewController: UITableViewController {
+class LoginViewController: UITableViewController , GIDSignInUIDelegate {
     
     @IBOutlet weak var userEmail: DesignableTextField!
     @IBOutlet weak var userPassword: DesignableTextField!
     @IBOutlet weak var signUp: SpringImageView!
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        print("sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) ")
+        // ...
+        if let error = error {
+            // ...
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        // ...
+        
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let error = error {
+                // ...
+                return
+            }
+            // User is signed in
+            // ...
+        }
+    }
     
     @IBAction func signInAction(_ sender: Any) {
+
+//                GIDSignIn.sharedInstance().uiDelegate = self
+//                GIDSignIn.sharedInstance().signIn()
         Auth.auth().signIn(withEmail: userEmail.text!, password: userPassword.text!) { (user, error) in
             // [START_EXCLUDE]
-            
+
             if let error = error {
                 print("eroror \(error.localizedDescription)")
-                
-                
+
+
                 if let errCode = AuthErrorCode(rawValue: error._code) {
-                    
+
                     switch errCode {
                     case .invalidEmail:
                         print("invalid email")
-                        
+
                         self.userEmail.animation = "shake"
                         self.userEmail.duration = 1.3
                         self.userEmail.animate()
-                        
+
                     case .emailAlreadyInUse:
                         print("in use")
-                        
+
                         self.userEmail.animation = "shake"
                         self.userEmail.duration = 1.3
                         self.userEmail.animate()
@@ -44,7 +72,7 @@ class LoginViewController: UITableViewController {
                         self.userPassword.animation = "shake"
                         self.userPassword.duration = 1.3
                         self.userPassword.animate()
-                        
+
                     case .userNotFound:
                         print("userNotFound")
                         self.userEmail.animation = "shake"
@@ -53,8 +81,8 @@ class LoginViewController: UITableViewController {
                         self.userPassword.animation = "shake"
                         self.userPassword.duration = 1.3
                         self.userPassword.animate()
-                        
-                        
+
+
                     default:
                         print("in use")
                         self.userEmail.animation = "shake"
@@ -78,13 +106,18 @@ class LoginViewController: UITableViewController {
                 self.performSegue(withIdentifier: "slogin", sender: self)
                 print("Loged in")
             }
-            
-            
+
+
         }
+ 
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
         
         self.signUp.addGestureRecognizer(
             UITapGestureRecognizer.init(target: self, action:
@@ -92,6 +125,8 @@ class LoginViewController: UITableViewController {
             )
         )
         self.signUp.isUserInteractionEnabled = true
+        
+ 
     }
     
     override func didReceiveMemoryWarning() {
