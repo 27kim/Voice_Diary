@@ -218,11 +218,11 @@ class AddRecordTableViewController: UITableViewController,UITextViewDelegate,UIT
             case .success(let value):
                 let json = JSON(value)
                 print(json)
-                var data0 = json["response"]
-                var data1 = data0["body"]
-                var data2 = data1["items"]
-                var data3 = data2["item"]
-                data3.array?.forEach({ (weatherData) in
+                var response = json["response"]
+                var body = response["body"]
+                var items = body["items"]
+                var item = items["item"]
+                item.array?.forEach({ (weatherData) in
                     let data = weatherData
                     
                     var date : String = data["fcstDate"].stringValue

@@ -170,14 +170,14 @@ class ViewController: UIViewController, UICollectionViewDataSource,UICollectionV
         let controller = storyboard?.instantiateViewController(withIdentifier: "secondVC") as! DetailViewController
         controller.imageToImageView = DataLoadedFromFirebase[indexPath.row].Image
         controller.Title = DataLoadedFromFirebase[indexPath.row].Title
-        controller.Description = DataLoadedFromFirebase[indexPath.row].Desc
+//        controller.Description = DataLoadedFromFirebase[indexPath.row].Desc
         controller.RefKey = DataLoadedFromFirebase[indexPath.row].RefKey
-
+controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date
         if(DataLoadedFromFirebase[indexPath.row].Weather.length > 2){
             let index = DataLoadedFromFirebase[indexPath.row].Weather.index(DataLoadedFromFirebase[indexPath.row].Weather.startIndex, offsetBy : 9)
-            controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date + DataLoadedFromFirebase[indexPath.row].Weather[index...]
+            controller.Description = DataLoadedFromFirebase[indexPath.row].Weather + "\r\n" + "\r\n" + DataLoadedFromFirebase[indexPath.row].Desc
         }else{
-            controller.Dateblbl = DataLoadedFromFirebase[indexPath.row].Date + DataLoadedFromFirebase[indexPath.row].Weather
+           controller.Description = DataLoadedFromFirebase[indexPath.row].Weather + "\r\n" + "\r\n" + DataLoadedFromFirebase[indexPath.row].Desc
         }
         
         self.present(controller, animated: false, completion: nil)
